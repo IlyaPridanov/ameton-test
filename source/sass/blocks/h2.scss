@@ -1,0 +1,12 @@
+.h2 {
+    margin: 0;
+
+    font-size: 40px;
+    font-weight: 600;
+    color: $black;
+    line-height: 1.2;
+
+    @media screen and (max-width:$min-tablet-width) {
+        font-size: 6vw;
+    }
+}

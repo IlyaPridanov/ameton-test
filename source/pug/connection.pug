@@ -1,0 +1,43 @@
+-
+    const arrSocialLink = [
+        {
+            name: "vk",
+            width: "26",
+            height: "14",
+        },
+        {
+            name: "insta",
+            width: "20",
+            height: "20",
+        },
+        {
+            name: "tik-tok",
+            width: "19",
+            height: "22",
+        },
+        {
+            name: "twitter",
+            width: "24",
+            height: "19",
+        },
+        {
+            name: "yandex",
+            width: "36",
+            height: "36",
+        },
+        {
+            name: "facebook",
+            width: "11",
+            height: "24",
+        },
+    ]
+
+section.connection
+    .connection__text-column
+        h2.connection__caption Социальные сети и сообщество
+        p.h2.connection__text Присоединяйтесь
+    ul.connection__list
+        each item in arrSocialLink
+            li.connection__item
+                a(href="#", aria-label="socila-link").connection__link
+                    +svg(item.name,item.width,item.height)

@@ -1,0 +1,101 @@
+.connection {
+    display: flex;
+    align-items: center;
+
+    max-width: 996px;
+    width: 100%;
+    padding: 42px 40px;
+    margin: 0 auto 80px;
+    background: $white;
+    box-shadow: 0px 20px 60px rgba(26, 26, 26, 0.05);
+    border-radius: 40px;
+
+    @media screen and (max-width:$min-desktop-width) {
+        padding: 25px 20px;
+    }
+
+    @media screen and (max-width:$tablet-width) {
+        display: block;
+        margin-bottom: 40px;
+    }
+
+    @media screen and (max-width:$mobile-width) {
+        padding: 20px 10px;
+    }
+}
+
+.connection__caption {
+    margin: 0;
+    margin-bottom: 16px;
+
+    font-size: 15px;
+    font-weight: 600;
+    color: $black;
+
+    @media screen and (max-width:$min-desktop-width) {
+        margin-bottom: 4px;
+    }
+
+    @media screen and (max-width:$tablet-width) {
+        text-align: center;
+    }
+
+    @media screen and (max-width:$min-tablet-width) {
+        font-size: 12px;
+    }
+}
+
+.connection__text {
+    @media screen and (max-width:$tablet-width) {
+        margin-bottom: 15px;
+
+        text-align: center;
+    }
+}
+
+.connection__list {
+    @include list();
+
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+
+    @media screen and (max-width:$tablet-width) {
+        margin-left: 0;
+        justify-content: center;
+    }
+}
+
+.connection__item {
+    margin-left: 14px;
+
+    @media screen and (max-width:$tablet-width) {
+        margin: 0 7px;
+    }
+}
+
+.connection__link {
+    cursor: pointer;
+    @include hover();
+    @include center();
+    width: 56px;
+    height: 56px;
+
+    background-color: $bg-social-link;
+    border-radius: 14px;
+
+    @media screen and (max-width:$mobile-width) {
+        width: 30px;
+        height: 30px;
+
+        border-radius: 50%;
+    }
+
+    & svg {
+        display: block;
+
+        @media screen and (max-width:$mobile-width) {
+            transform: scale(0.7);
+        }
+    }
+}

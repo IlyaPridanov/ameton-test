@@ -56,6 +56,7 @@
 .support__list {
     @include list();
     @include center();
+    margin-left: auto;
 
     @media screen and (max-width:$min-tablet-width) {
         display: block;
@@ -63,6 +64,8 @@
 }
 
 .support__link {
+    cursor: pointer;
+    @include hover();
     @include center();
     margin: 0 4px;
     padding: 4px;
