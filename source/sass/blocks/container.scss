@@ -3,5 +3,9 @@
     width: 1280px;
     padding: 0 40px;
     max-width: 100%;
+
+    @media screen and (max-width:$min-tablet-width) {
+        padding: 0 15px;
+    }
 }
 

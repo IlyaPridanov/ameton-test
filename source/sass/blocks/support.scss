@@ -1,0 +1,90 @@
+.support {
+    padding: 40px 20px 54px;
+    margin-top: 40px;
+    margin-bottom: 82px;
+
+    border-radius: 40px;
+    background-color: $bg-color-support;
+    background-image: url('../img/support-1.svg'), url('../img/support-2.svg');
+    background-position: left -6px top 38px, right -77px bottom -42px;
+    background-size: auto, auto;
+    background-repeat: no-repeat;
+
+    @media screen and (max-width:$tablet-width) {
+        margin-top: 15px;
+        margin-bottom: 40px;
+        padding: 20px 10px;
+    }
+}
+
+.support__caption {
+    margin: 0;
+    margin-bottom: 4px;
+
+    font-size: 62px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: $white;
+    text-align: center;
+
+    @media screen and (max-width:$min-tablet-width) {
+        margin-bottom: 10px;
+
+        font-size: 7vw;
+    }
+}
+
+.support__text {
+    margin: 0 auto 38px;
+    width: 535px;
+    max-width: 100%;
+
+    font-size: 17px;
+    line-height: 1.4;
+    font-weight: 400;
+    color: $white;
+    text-align: center;
+
+    @media screen and (max-width:$min-tablet-width) {
+        margin-bottom: 25px;
+
+        font-size: 14px;
+        line-height: 1.2;
+    }
+}
+
+.support__list {
+    @include list();
+    @include center();
+
+    @media screen and (max-width:$min-tablet-width) {
+        display: block;
+    }
+}
+
+.support__link {
+    @include center();
+    margin: 0 4px;
+    padding: 4px;
+    width: 160px;
+    max-width: 100%;
+    height: 48px;
+
+    font-weight: 600;
+    color: $black;
+    font-size: 15px;
+
+    background-color: $white;
+    border-radius: 12px;
+
+    @media screen and (max-width:$min-tablet-width) {
+        margin: 0 auto 5px;
+        width: 210px;
+        height: 40px;
+    }
+
+    & svg {
+        display: block;
+        margin-right: 10px;
+    }
+}
