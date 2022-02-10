@@ -1,0 +1,47 @@
+doctype html
+html(lang="ru")
+    head
+        block head
+            meta(charset="utf-8")
+            meta(content="width=device-width, initial-scale=1" name="viewport")
+            meta(name="description" content="Lorem ipsum dolor sit amet, consectetuer adipiscing elit.")
+            title ameton-test
+            <link href="https://vjs.zencdn.net/7.15.4/video-js.css" rel="stylesheet" />
+            link(rel="icon" type="image/x-icon" href="favicon.ico")
+            link(rel="stylesheet" href="css/style.min.css")
+    body.table
+        .container
+            .table__block
+                table
+                    tr
+                        th.first.js-fix(rowspan="2") Заголовок 1
+                        th Заголовок 5
+                        th(colspan="4") Заголовок 6
+                    tr
+                        th Заголовок 7
+                        th Заголовок 8
+                        th Заголовок 9
+                        th Заголовок 10
+                        th Заголовок 11
+                    tr
+                        td.js-fix Заголовок 2
+                        td Lorem, ipsum.
+                        td Lorem
+                        td Lorem, ipsum dolor.
+                        td Lorem, ipsum.
+                        td Lorem ipsum dolor sit amet.
+                    tr
+                        td.js-fix Заголовок 3
+                        td Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore inventore itaque vero?
+                        td Lorem ipsum dolor sit amet consectetur adipisicing.
+                        td Lorem
+                        td Lorem
+                        td Lorem ipsum dolor sit amet.
+                    tr
+                        td.js-fix Заголовок 4
+                        td Lorem ipsum dolor sit amet, consectetur adipisicing.
+                        td Lorem
+                        td Lorem
+                        td Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                        td Lorem ipsum dolor sit amet.
+        script(src='js/script.js')
