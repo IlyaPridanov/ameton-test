@@ -1,14 +1,5 @@
 include pug/mixin.pug
 
--
-    var arrImg = [
-        "img/tumblr.png",
-        "img/g-plus.png",
-        "img/twitter.png",
-        "img/rss.png",
-        "img/facebook.png",
-    ]
-
 doctype html
 html(lang="ru")
     head
@@ -21,11 +12,11 @@ html(lang="ru")
             link(rel="icon" type="image/x-icon" href="favicon.ico")
             link(rel="stylesheet" href="css/style.min.css")
     body
-        //- <div style="display:none">
-        //-     <include src="build/img/icons/sprite.svg"></include>
-        //- </div>
-        ol
-            li
-                a(href="table.html") Первое задание таблица
+        <div style="display:none">
+            <include src="build/img/icons/sprite.svg"></include>
+        </div>
+        main.main
+            .container
+
 
         script(src='js/script.js')
