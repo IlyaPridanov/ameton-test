@@ -1,0 +1,28 @@
+-
+    const referenceArr = [
+        {
+            caption: "Бережная сборка",
+        },
+        {
+            caption: "Способы доставки и самовывоза",
+            text: "Это карта лояльности с вашим номером покупат Это карта лояльности с вашим номером покупат",
+        },
+        {
+            caption: "Минимальная сумма заказа",
+        },
+        {
+            caption: "Лёгкий возврат",
+            text: "Это карта лояльности с вашим номером покупат Это карта лояльности с вашим номером покупат",
+        },
+    ]
+
+section.reference
+    h2.h2.reference__caption Справка
+    ul.reference__list
+        each item in referenceArr
+            li.reference__item
+                a(href="#").reference__link
+                    span.reference__item-caption=item.caption
+                    if item.text
+                        span.reference__text=item.text
+                    +svg("arrow",7,12)

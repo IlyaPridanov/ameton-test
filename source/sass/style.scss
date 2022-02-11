@@ -5,12 +5,19 @@
 @import "global.scss";
 @import "mixin.scss";
 
+// Global
+@import "vendor/swiper.scss";
+
 // Blocks
 @import "blocks/container.scss";
 @import "blocks/h2.scss";
+@import "blocks/button.scss";
 
 @import "blocks/support.scss";
 @import "blocks/connection.scss";
+@import "blocks/faq.scss";
+@import "blocks/reference.scss";
+@import "blocks/article.scss";
 
 
 

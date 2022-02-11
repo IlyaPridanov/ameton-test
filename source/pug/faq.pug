@@ -1,0 +1,38 @@
+-
+    const arrFaq = [
+        {
+            caption: "Где работает доставка?",
+            img: true,
+        },
+        {
+            caption: "Где работает доставка?",
+            text: "Карта лояльности с вашим номером покупателя. Это карта лояльности с вашим",
+        },
+        {
+            caption: "Где работает доставка?",
+            text: "Карта лояльности с вашим номером ",
+            img: true,
+        },
+        {
+            caption: "В какое время возможен самовывоз В какое время возможен самовывоз?",
+            text: "Карта лояльности с вашим ",
+        },
+    ]
+
+section.faq.slider
+    h2.h2.faq__caption Часто задаваемые вопросы
+    .swiper-container.faq__container
+        .swiper-wrapper.faq__wrapper
+            each item in arrFaq
+                .swiper-slide.faq__slide
+                    a(href="#").faq__link
+                        span.faq__column
+                            span.faq__item-caption=item.caption
+                            if item.text
+                                span.faq__text=item.text
+                        if item.img
+                            .faq__img
+                                img(src="img/bag.png", alt="faq")
+        //Кнопка отключена по заданию
+        button.faq__btn(type="button")
+            +svg("arrow",7,12)

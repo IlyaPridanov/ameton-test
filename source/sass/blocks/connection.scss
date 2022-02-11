@@ -75,27 +75,11 @@
 }
 
 .connection__link {
-    cursor: pointer;
-    @include hover();
-    @include center();
     width: 56px;
     height: 56px;
-
-    background-color: $bg-social-link;
-    border-radius: 14px;
 
     @media screen and (max-width:$mobile-width) {
         width: 30px;
         height: 30px;
-
-        border-radius: 50%;
-    }
-
-    & svg {
-        display: block;
-
-        @media screen and (max-width:$mobile-width) {
-            transform: scale(0.7);
-        }
     }
 }

@@ -1,0 +1,102 @@
+.article {
+    margin: 22px 0;
+    width: 690px;
+    max-width: 100%;
+
+    & h1 {
+        display: flex;
+        align-items: center;
+        margin: 0;
+        margin-bottom: 16px;
+
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 1.2;
+        color: $black;
+
+        @media screen and (max-width:$mobile-width) {
+            margin-bottom: 8px;
+
+            font-size: 6vw;
+        }
+
+        & > a {
+            @include hover();
+            display: block;
+            margin-left: 15px;
+
+            & > svg {
+                display: block;
+            }
+        }
+    }
+
+    & p {
+        margin: 0;
+
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 1.4;
+        color: $black;
+
+        @media screen and (max-width:$mobile-width) {
+            margin-bottom: 8px;
+
+            font-size: 14px;
+        }
+    }
+}
+
+.article__support {
+    margin: 40px 0 16px;
+
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: $black;
+}
+
+.article__row {
+    display: flex;
+    align-items: center;
+}
+
+.article__chat-link {
+    @include hover();
+    @include center();
+    width: 224px;
+    height: 48px;
+
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: $white;
+
+    background-color: $green;
+    border-radius: 12px;
+
+    @media screen and (max-width:$mobile-width) {
+        height: 30px;
+        width: 165px;
+
+        font-size: 14px;
+    }
+
+    & > svg {
+        display: block;
+        margin-right: 8px;
+    }
+}
+
+.article__link {
+    width: 48px;
+    height: 48px;
+    margin-left: 8px;
+
+    color: $green;
+
+    @media screen and (max-width:$mobile-width) {
+        width: 30px;
+        height: 30px;
+    }
+}

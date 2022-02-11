@@ -1,0 +1,63 @@
+.reference__caption {
+    margin-bottom: 32px;
+
+    text-align: center;
+}
+
+.reference__list {
+    @include list();
+}
+
+.reference__item {
+    margin-bottom: 12px;
+}
+
+.reference__link {
+    position: relative;
+
+    display: block;
+    padding: 20px 35px 20px 24px;
+
+    background-color: $white;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+    transition: $transition;
+
+    &:focus,
+    &:hover {
+        cursor: pointer;
+        transition: $transition;
+        transform: translateX(20px);
+    }
+
+    & > svg {
+        position: absolute;
+        right: 25px;
+        top: 50%;
+
+        color: $grey;
+
+        transform: translateY(-50%);
+    }
+}
+
+.reference__item-caption {
+    display: block;
+    margin-bottom: 4px;
+
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: $black;
+}
+
+.reference__text {
+    display: block;
+    width: 390px;
+    max-width: 100%;
+
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: $grey;
+}

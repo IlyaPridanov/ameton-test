@@ -1,0 +1,20 @@
+.button {
+    cursor: pointer;
+    @include hover();
+    @include center();
+
+    background-color: $bg-social-link;
+    border-radius: 14px;
+
+    @media screen and (max-width:$mobile-width) {
+        border-radius: 50%;
+    }
+
+    & svg {
+        display: block;
+
+        @media screen and (max-width:$mobile-width) {
+            transform: scale(0.7);
+        }
+    }
+}

@@ -2,5 +2,5 @@
 
 // Modules
 
-//= modules/table.js
-//= modules/map.js
+//= vendor/swiper.js
+//= modules/getSlider.js
