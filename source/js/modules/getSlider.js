@@ -13,13 +13,21 @@
             var loop = true;
             // var allowTouchMove = true;
             var direction = 'horizontal';
-            var autoHeight = false;
+            var autoHeight = true;
             var breakpoints = {
                 320: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                },
+                769: {
                     slidesPerView: 2,
                     spaceBetween: 0,
                 },
-                768: {
+                901: {
+                    slidesPerView: 3,
+                    spaceBetween: 0,
+                },
+                1025: {
                     slidesPerView: 4,
                     spaceBetween: 0,
                 },
@@ -45,7 +53,7 @@
         }
     };
 
-    sliderContainers.forEach(function (currentValue) {
-        getBlockSlider(currentValue);
-    });
+    for (let i=0; i<sliderContainers.length; i++) {
+        getBlockSlider(sliderContainers[i]);
+    }
 })();
